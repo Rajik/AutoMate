@@ -1,0 +1,11 @@
+<h3>Response</h3>
+<table align="center" style="width:100%">
+  <tr>
+    <td> <%= label_tag(:status_code, "Status code:") %> </td>
+    <td> <%= @curl_response.response_code %> </td>
+  </tr>
+  <tr>
+    <td> <%= label_tag(:response_body, "Response:") %> </td>
+    <td> <%=  text_area_tag(:response_body, @curl_response.response_body, disabled: true) %> </td>
+  </tr>
+</table>

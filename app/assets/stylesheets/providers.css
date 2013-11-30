@@ -1,0 +1,65 @@
+*
+{
+    font-size: 14px;
+}
+#tabs
+  {
+  width: 1000px;
+  margin-top: 200px;
+  margin-left: 100px;
+}
+
+#tabs-1-li, #tabs-2-li, #tabs-3-li
+  {
+  width: 32.7%;
+}
+
+a
+  {
+  width: 90%;
+}
+
+.ui-tabs .ui-tabs-nav .pass
+  {
+  /*background-color: #53B756 !important;*/
+  background-color: #FFC200 !important;
+}
+
+.ui-tabs .ui-tabs-nav .fail
+  {
+  /*background-color: #F91212 !important;*/
+  background-color: #FFC200 !important;
+}
+
+.ui-tabs .ui-tabs-nav .not-done
+  {
+  background-color: #FFC200 !important;
+}
+
+.submit-button
+{
+    display: block;
+    text-align: center;
+}
+
+.curl-params
+{
+    align: center;
+}
+input[type="text"], input[type="url"]
+{
+    width:75%;
+}
+textarea
+{
+    width:75%;
+    height: 100px;
+}
+
+td
+{
+  width: auto;
+}
+
+
+
