@@ -6,6 +6,7 @@ AutoMate::Application.routes.draw do
   root 'providers#index'
 
   post '/curl' => 'providers#curl'
+  post '/validate' => 'providers#validate'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

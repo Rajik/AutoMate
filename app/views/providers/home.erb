@@ -18,13 +18,13 @@
 
 <div id="tabs">
   <ul>
-    <li id="tabs-1-li" class="pass"><a href="#tabs-1">Curl</a></li>
-    <li id="tabs-2-li" class="fail"><a href="#tabs-2">Stress test</a></li>
-    <li id="tabs-3-li" class="not-done"><a href="#tabs-3">Single meta</a></li>
+    <li id="tabs-1-li"><a href="#tabs-1">Curl</a></li>
+    <li id="tabs-2-li"><a href="#tabs-2">Stress test</a></li>
+    <li id="tabs-3-li"><a href="#tabs-3">Single meta</a></li>
   </ul>
   <div id="tabs-1">
     <h3>Request</h3>
-    <%= form_tag("/curl",remote: true, method: "post") do %>
+    <%= form_tag("/curl", remote: true, method: "post") do %>
         <table align="center" style="width:100%">
           <tr>
             <td> <%= label_tag(:partner_name, "Provider Name:") %> </td>
@@ -33,12 +33,17 @@
 
           <tr>
             <td> <%= label_tag(:url, "Endpoint:") %>  </td>
-            <td> <%= url_field_tag(:url) %> </td>
+            <td> <%= url_field_tag(:url, "http://tripadvisor.francisco.uat.cwtdigital.com/hotel_availability") %> </td>
           </tr>
           <tr>
             <td/>
             <td> <%= radio_button_tag(:verb, "GET") %> GET
-            <%= radio_button_tag(:verb, "POST", true)%>  POST </td>
+              <%= radio_button_tag(:verb, "POST", true) %>  POST
+            </td>
+          </tr>
+          <tr>
+            <td> <%= label_tag(:api_version, "Api version") %>  </td>
+            <td> <%= text_field_tag(:api_version) %> </td>
           </tr>
           <tr>
             <td> <%= label_tag(:post_body, "Body:") %> </td>
@@ -53,10 +58,10 @@
         <div class="submit-button">
           <%= submit_tag "Curl" %>
         </div>
-
-        <div id="curl_result" style="width:100%"/>
-
     <% end %>
+    <div id="curl_result" style="width:100%"></div>
+
+    <div id="validation_errors" style="width:100%"></div>
   </div>
   <div id="tabs-2">
     <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis

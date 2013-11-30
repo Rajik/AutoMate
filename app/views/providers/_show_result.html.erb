@@ -6,6 +6,12 @@
   </tr>
   <tr>
     <td> <%= label_tag(:response_body, "Response:") %> </td>
-    <td> <%=  text_area_tag(:response_body, @curl_response.response_body, disabled: true) %> </td>
+    <td> <%= text_area_tag(:response_body, @curl_response.response_body, disabled: true) %> </td>
   </tr>
 </table>
+
+<div class="submit-button">
+<%= form_tag("/validate", remote: true, method: "post") do %>
+    <%= submit_tag 'Validate response' %>
+<% end %>
+</div>
