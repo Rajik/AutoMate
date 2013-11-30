@@ -82,10 +82,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="home.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/providers/home.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="57" selection-start="2085" selection-end="2085" vertical-scroll-proportion="-18.9">
+            <state line="35" column="39" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.5564516">
               <folding>
                 <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -104,10 +104,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="v3_schema.json" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="v3_schema.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/assets/v3_schema.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="109" selection-start="370" selection-end="370" vertical-scroll-proportion="0.21327014">
+            <state line="9" column="109" selection-start="370" selection-end="370" vertical-scroll-proportion="-5.625">
               <folding />
             </state>
           </provider>
@@ -153,10 +153,10 @@
         <option value="$PROJECT_DIR$/app/controllers/providers_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/providers/json_errors.js.erb" />
         <option value="$PROJECT_DIR$/app/views/providers/json_schema_fail.js.erb" />
-        <option value="$PROJECT_DIR$/app/views/providers/home.erb" />
         <option value="$PROJECT_DIR$/lib/json_validator/json_validator.rb" />
         <option value="$PROJECT_DIR$/lib/assets/v2_schema.json" />
         <option value="$PROJECT_DIR$/lib/assets/v3_schema.json" />
+        <option value="$PROJECT_DIR$/app/views/providers/home.erb" />
       </list>
     </option>
   </component>
@@ -799,14 +799,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="818" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871014" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25322813" sideWeight="0.67128986" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25322813" sideWeight="0.67128986" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -967,17 +967,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/providers/home.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="57" selection-start="2085" selection-end="2085" vertical-scroll-proportion="-18.9">
-          <folding>
-            <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/assets/v2_schema.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="109" selection-start="313" selection-end="313" vertical-scroll-proportion="91.125">
@@ -987,8 +976,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/assets/v3_schema.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="109" selection-start="370" selection-end="370" vertical-scroll-proportion="0.21327014">
+        <state line="9" column="109" selection-start="370" selection-end="370" vertical-scroll-proportion="-5.625">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/providers/home.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="39" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.5564516">
+          <folding>
+            <element signature="n#style#0;n#table#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
