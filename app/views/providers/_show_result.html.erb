@@ -10,8 +10,10 @@
   </tr>
 </table>
 
-<div class="submit-button">
-<%= form_tag("/validate", remote: true, method: "post") do %>
-    <%= submit_tag 'Validate response' %>
+<% if @curl_response.response_code.eql? 200 %>
+    <div class="submit-button">
+      <%= form_tag("/validate", remote: true, method: "post") do %>
+          <%= submit_tag 'Validate response' %>
+      <% end %>
 <% end %>
 </div>
