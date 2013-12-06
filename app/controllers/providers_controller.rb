@@ -10,18 +10,21 @@ class ProvidersController < ApplicationController
     @@api_version = params[:api_version]
     auth = params[:auth]
 
+    url = params[:url]
     if params[:verb].eql? 'GET'
       if auth.empty?
-        @@response = Typhoeus.get(params[:url])
+        @@response = Typhoeus.get(url)
       else
-        @@response = Typhoeus.get(params[:url], userpwd: auth)
+        @@response = Typhoeus.get(url, userpwd: auth)
       end
     else
       if params[:verb].eql? 'POST'
+        content_type = params[:content_type]
+        post_body = params[:post_body]
         if auth.empty?
-          @@response = Typhoeus.post(params[:url], headers: {"Content-Type" => "application/x-www-form-urlencoded"}, body: params[:post_body])
+          @@response = Typhoeus.post(url, headers: {"Content-Type" => content_type}, body: post_body)
         else
-          @@response = Typhoeus.post(params[:url], headers: {"Content-Type" => "application/x-www-form-urlencoded"}, body: params[:post_body], userpwd: auth)
+          @@response = Typhoeus.post(url, headers: {"Content-Type" => content_type}, body: post_body, userpwd: auth)
         end
       end
     end

@@ -33,7 +33,7 @@
 
           <tr>
             <td> <%= label_tag(:url, "Endpoint:") %>  </td>
-            <td> <%= url_field_tag(:url) %> </td>
+            <td> <%= url_field_tag(:url, "http://tripadvisor.francisco.uat.cwtdigital.com/hotel_availability") %> </td>
           </tr>
           <tr>
             <td/>
@@ -42,12 +42,16 @@
             </td>
           </tr>
           <tr>
-            <td> <%= label_tag(:api_version, "Api version") %>  </td>
+            <td> <%= label_tag(:content_type, "Content Type:") %> </td>
+            <td> <%= select_tag(:content_type,options_for_select(["application/x-www-form-urlencoded", "application/json", "application/xml", "text/xml", "text/html"])) %>  </td>
+          </tr>
+          <tr>
+            <td> <%= label_tag(:api_version, "Api version:") %>  </td>
             <td> <%= text_field_tag(:api_version) %> </td>
           </tr>
           <tr>
             <td> <%= label_tag(:post_body, "Body:") %> </td>
-            <td> <%= text_area_tag(:post_body) %> </td>
+            <td> <%= text_area_tag(:post_body,'api_version=3&start_date=2013-12-10&query_key=stress_test&end_date=2013-12-12&num_adults=2&lang=en_US&device_type=d&hotels=[{"ta_id": 305092 ,"partner_id":"209256365","partner_url":"http%3A%2F%2Fwww.holidaynights.co.uk%2Fhotel%2FHilton_Sharm_Fayrouz%2F209256365%2Frefcode%3Dtripadvisormeta%3FTAHotelCode%3D209256365"},{"ta_id": 317149 ,"partner_id":"9192","partner_url":"http%3A%2F%2Fwww.holidaynights.co.uk%2Fhotel%2FGaddis_Hotel%2F9192%2Frefcode%3Dtripadvisormeta%3FTAHotelCode%3D9192"},{"ta_id": 670554 ,"partner_id":"167648843","partner_url":"http%3A%2F%2Fwww.holidaynights.co.uk%2Fhotel%2FMacedonia_Hotel%2F167648843%2Frefcode%3Dtripadvisormeta%3FTAHotelCode%3D167648843"},{"ta_id": 301992 ,"partner_id":"218384604","partner_url":"http%3A%2F%2Fwww.holidaynights.co.uk%2Fhotel%2FHilton_Long_Beach%2F218384604%2Frefcode%3Dtripadvisormeta%3FTAHotelCode%3D218384604"},{"ta_id": 889766 ,"partner_id":"208277617","partner_url":"http%3A%2F%2Fwww.holidaynights.co.uk%2Fhotel%2FOriental_Rivoli_Hotel%2F208277617%2Frefcode%3Dtripadvisormeta%3FTAHotelCode%3D208277617"}]&user_country=US' ) %> </td>
           </tr>
           <tr>
             <td> <%= label_tag(:auth, "Authorization:") %> </td>

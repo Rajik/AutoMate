@@ -1,2 +1,7 @@
-Errors
-<p> <%= @errors %> </p>
+<h3>Errors</h3>
+<ul>
+  <% @errors.each do |e| %>
+      <li> <%= e.to_s.split("in schema").first.split(", inclusively").first %> </li>
+  <% end %>
+</ul>
+
