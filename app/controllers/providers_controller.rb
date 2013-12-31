@@ -28,6 +28,7 @@ class ProvidersController < ApplicationController
         end
       end
     end
+    puts @@response.headers_hash.as_json['Content-Type']
     puts @@response.response_body.as_json
     @curl_response = @@response
     respond_to do |format|
